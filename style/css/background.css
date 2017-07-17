@@ -1,0 +1,23 @@
+.background {
+	background-image: url(../img/img_flwr.gif), url(../img/img_flwr.gif), url(../img/img_flwr.gif), url(../img/img_flwr.gif), url(../img/img_flwr.gif), url(../img/paper.gif);
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat;
+	background-position: left top, right top, right bottom, left bottom, center center, left top;
+	background-size: 60px 60px, 60px 60px, 60px 60px, 60px 60px, 60px 60px, 60px 60px;
+	color: #FF7F50;
+}
+
+
+/*content-box, padding-box,和 border-box*/
+
+.background-clip-origin {
+	padding: 20px;
+	/*这里不能设置为solid*/
+	border: 20px dotted #59a541;
+	/*不能设置为repeat,目前背景要设置为图片*/
+	background: url(../img/back_img.PNG), url(../img/paper.gif), url(../img/back_img1.PNG);
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-size: 100% 100%, 100% 100%, 100% 100%;
+	background-origin: content-box, padding-box, border-box;
+	/*定义背景只能显示到裁剪的区域以内,比如设置为padding-box，就只能显示padding-box和content-box的背景*/
+	background-clip: padding-box;
+}

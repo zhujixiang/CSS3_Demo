@@ -1,6 +1,7 @@
 .border_radius {
 	border: 2px solid;
-	/*圆角*/
+	/*圆角（后面的值分别可写1,2,3,4个值，4个全写的话分别定义 左上，右上，右下，左下）*/
+	/*单独定义的属性为border-top-left-radius\border-top-right-radius\border-bottom-right-radius\border-bottom-left-radius*/
 	border-radius: 30px;
 	background-color: #59a541;
 }

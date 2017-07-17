@@ -13,9 +13,8 @@
 }
 
 .css_block>div>div {
-	width: 400px;
-	height: 100px;
 	float: left;
+	overflow: hidden;
 }
 
 div {
@@ -28,17 +27,6 @@ span {
 	font-size: 36px;
 	font-weight: bold;
 	margin: 30px;
-}
-
-.background {
-	/*background-image: ;
-	background-size: ;
-	background-origin: ;
-	background-clip: ;
-	
-	
-	background-position: ;
-	background-repeat: ;*/
 }
 
 .gradients {

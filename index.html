@@ -6,6 +6,7 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="style/css/css.css" />
 		<link rel="stylesheet" type="text/css" href="style/css/border.css" />
+		<link rel="stylesheet" type="text/css" href="style/css/background.css" />
 	</head>
 
 	<body>
@@ -30,23 +31,25 @@
 		</div>
 
 		<div class="css_block">
-			<span>border</span>
+			<span>background</span>
 			<div>
-				<div class="border_radius">
-					border-radius
-					<br /> <br /> border-radius: 10px;
-				</div>
-				<div class="box-shadow">
-					box-shadow
-					<br /> <br /> box-shadow: 10px 10px 15px -3px white;
-				</div>
-				<div class="border-image">
-					border-image
-					<br /> <br /> border-image: url();
+				<div class="background">
+					background
+					<br /> <br /> background-image: url(../img/img_flwr.gif), url(../img/img_flwr.gif), url(../img/img_flwr.gif), url(../img/img_flwr.gif), url(../img/img_flwr.gif), url(../img/paper.gif);
+					<br />background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat;
+					<br />background-position: left top, right top, right bottom, left bottom, center center, left top;
+					<br />background-size: 60px 60px, 60px 60px, 60px 60px, 60px 60px, 60px 60px, 60px 60px;
 				</div>
 			</div>
-			<!--下面这句可以在不设置overflow的情况下，将父div撑开-->
-			<!--<div style="clear:both"></div>-->
+			<div>
+				<div class="background-clip-origin">
+					background-clip&background-origin
+					<br /> <br /> background: url(../img/back_img.PNG), url(../img/paper.gif), url(../img/back_img1.PNG);
+					<br />background-repeat: no-repeat, no-repeat, no-repeat;
+					<br />background-size: 100% 100%, 100% 100%, 100% 100%;
+					<br />background-origin: content-box, padding-box, border-box;
+				</div>
+			</div>
 		</div>
 
 		<div class="gradients">
