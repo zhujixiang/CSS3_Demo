@@ -1,0 +1,22 @@
+.border_radius {
+	border: 2px solid;
+	/*圆角*/
+	border-radius: 30px;
+	background-color: #59a541;
+}
+
+.box-shadow {
+	border: 2px solid;
+	/*X轴\Y轴\阴影浓度\阴影大小\颜色*/
+	box-shadow: 10px 10px 15px -3px white;
+	background-color: #3a87ab;
+}
+
+.border-image {
+	/*要把边框宽度设置大一些,否则无法看到边界图片*/
+	border: 15px solid;
+	/*边界图片*/
+	/*除了stretch还有round*/
+	border-image: url(../img/border.png) 30 30 stretch;
+	background-color: #ce8635;
+}

@@ -1,13 +1,33 @@
-.border_radius {
-	width: 100px;
+.css_block {
+	border: 2px solid;
+	/*设置overflow后,子元素float浮动后,也可以被撑开*/
+	overflow: hidden;
+	background-color: #343434;
+	color: white;
+}
+
+.css_block>div {
+	/*设置overflow后,子元素float浮动后,也可以被撑开*/
+	overflow: hidden;
+	background-color: #444444;
+}
+
+.css_block>div>div {
+	width: 400px;
 	height: 100px;
-	border: 2px solid black;
-	/*圆角*/
-	border-radius: 10px;
-	/*X轴\Y轴\阴影\颜色*/
-	box-shadow: 10px 10px 10px 5px #888888;
-	/*边界图片*/
-	/*border-image: url();*/
+	float: left;
+}
+
+div {
+	margin: 10px;
+	text-align: center;
+}
+
+span {
+	color: #FFFFFF;
+	font-size: 36px;
+	font-weight: bold;
+	margin: 30px;
 }
 
 .background {
