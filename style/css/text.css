@@ -1,0 +1,43 @@
+.text-shadow {
+	text-shadow: 4px 4px 1px #FF0000;
+	background-color: #3a87ab;
+}
+
+.text-shadow::before {
+	/*伪元素添加阴影*/
+	content: '';
+	position: absolute;
+	box-shadow: 0 0 10px red;
+	width: 36%;
+	height: 8%;
+}
+
+.text-overflow {
+	/*clip为剪除超出部分，ellipsis为将超出部分显示为...*/
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 163px;
+	word-wrap: break-word;
+}
+
+.word-wrap {
+	/*尽量显示为单词，单词的宽度不够了再拆分单词换行*/
+	word-wrap: break-word;
+	/*整个单词不换行*/
+	/*word-break: keep-all;*/
+	/*只要到换行位置即换行*/
+	/*word-break: break-all;*/
+	width: 38px;
+	background: #3a87ab;
+}
+
+
+/*参考：
+hanging-punctuation: none|first|last|allow-end|force-end;	规定标点字符是否位于线框之外
+punctuation-trim: none|start|end|allow-end|adjacent; 规定是否对标点字符进行修剪
+text-align-last: auto|left|right|center|justify|start|end|initial|inherit; 设置如何对齐最后一行或紧挨着强制换行符之前的行
+text-emphasis: text-emphasis-style text-emphasis-color;	向元素的文本应用重点标记以及重点标记的前景色
+text-justify: auto|inter-word|inter-ideograph|inter-cluster|distribute|kashida|trim; 规定当 text-align 设置为 "justify" 时所使用的对齐方法
+text-outline: thickness blur color;	规定文本的轮廓
+text-wrap: normal|none|unrestricted|suppress; 规定文本的换行规则*/

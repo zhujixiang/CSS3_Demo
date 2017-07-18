@@ -1,0 +1,23 @@
+.Gradients {
+	/*线性的这种方向的写法,有8个方向可选*/
+	/*或者使用角度,比如66deg,垂直向上为0deg，顺时针依次增加角度*/
+	/*如果使用透明度,则将颜色更改为rgba形式的写法,比如rgba(255,0,0,0)*/
+	background: linear-gradient(to top right, red, blue, yellow);
+}
+
+.repeating-linear-gradients {
+	/*重复的线性渐变需要加百分比*/
+	background: repeating-linear-gradient(45deg, red 10%, blue 20%, yellow 30%);
+}
+
+.radial-gradient {
+	/*形状为circle 或 ellipse，可以省略，默认是ellipse*/
+	background: radial-gradient(circle, red 5%, green 15%, blue 60%);
+	/*background: radial-gradient(60% 55%, farthest-side, red, green, blue);此句不兼容谷歌浏览器，用下面的替代*/
+	/*closest-side/farthest-side/closest-corner/farthest-corner用来设置渐变的大小*/
+	background: -webkit-radial-gradient(60% 55%, closest-side, yellow, blue, green);
+}
+
+.repeating-radial-gradient {
+	background: repeating-radial-gradient(red, yellow 35%, green 37%);
+}

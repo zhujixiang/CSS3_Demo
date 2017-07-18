@@ -1,0 +1,11 @@
+.transition {
+	/*transition: property duration timing-function delay;为下面样式的全量写法*/
+	transition: width 2s ease 1s, height 1s;
+	width: 100px;
+	height: 100px;
+}
+
+.transition:hover {
+	width: 600px;
+	height: 120px;
+}

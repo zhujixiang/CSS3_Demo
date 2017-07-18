@@ -7,11 +7,15 @@
 		<link rel="stylesheet" type="text/css" href="style/css/css.css" />
 		<link rel="stylesheet" type="text/css" href="style/css/border.css" />
 		<link rel="stylesheet" type="text/css" href="style/css/background.css" />
+		<link rel="stylesheet" type="text/css" href="style/css/Gradients.css" />
+		<link rel="stylesheet" type="text/css" href="style/css/text.css" />
+		<link rel="stylesheet" type="text/css" href="style/css/transform.css" />
+		<link rel="stylesheet" type="text/css" href="style/css/transition.css" />
 	</head>
 
 	<body>
 		<div class="css_block">
-			<span>border</span>
+			<span>border边框</span>
 			<div>
 				<div class="border_radius">
 					border-radius
@@ -31,7 +35,7 @@
 		</div>
 
 		<div class="css_block">
-			<span>background</span>
+			<span>background背景</span>
 			<div>
 				<div class="background">
 					background
@@ -52,27 +56,73 @@
 			</div>
 		</div>
 
-		<div class="gradients">
+		<div class="css_block">
+			<span>gradients渐变</span>
+			<div>
+				<div class="Gradients">
+					linear-gradients线性渐变
+					<br /> <br /> background: linear-gradient(to top right, red, blue, yellow);
+				</div>
+				<div class="repeating-linear-gradients">
+					repeating-linear-gradients重复线性渐变
+					<br /> <br /> background: repeating-linear-gradient(45deg, red 10%, blue 20%, yellow 30%);
+				</div>
+				<div class="radial-gradient">
+					radial-gradient径向渐变(设置位置)
+					<br /> <br /> background: -webkit-radial-gradient(60% 55%, closest-side, yellow, blue, green);
+				</div>
+				<div class="repeating-radial-gradient">
+					repeating-radial-gradient重复径向渐变
+					<br /> <br /> background: repeating-radial-gradient(red, yellow 35%, green 37%);
+				</div>
+			</div>
+		</div>
 
+		<div class="css_block">
+			<span>text文本效果</span>
+			<div>
+				<div class="text-shadow">
+					text-shadow文本阴影\::before和::after伪元素阴影
+					<br /> <br /> text-shadow: 5px 5px 5px #FF0000;
+				</div>
+				<div style="background: #3a87ab;">
+					text-overflow文本溢出
+					<div class="text-overflow">
+						text-overflow: ellipsis;
+						<br />white-space: nowrap;
+						<br />overflow: hidden;
+					</div>
+				</div>
+				<div class="word-wrap">
+					word-wrap文本换行
+					<br /> <br /> word-wrap: break-word;
+				</div>
+			</div>
 		</div>
-		<div class="transparent">
 
+		<div class="css_block">
+			<span>2D 3D转换</span>
+			<div>
+				<div class="transform">
+					transform
+					<br /> <br /> transform: rotate(30deg);
+					<br /> transform: translate(27px, 6px);
+					<br /> transform: scale(1, 0.6);
+					<br /> transform: skew(15deg, 5deg);
+				</div>
+			</div>
 		</div>
-		<div class="repeat_gradients">
 
+		<div class="css_block">
+			<span>transition过渡</span>
+			<div>
+				<div class="transition">
+					transition
+					<br /> <br /> transition: width 2s ease 2s, height 1s;
+				</div>
+			</div>
 		</div>
-		<div class="radial_gradient">
 
-		</div>
-		<div class="size_gradients">
-
-		</div>
-		<div class="text_style">
-			<h1>text shadow effect</h1>
-		</div>
-		<div class="text_overflow">
-			11111111111111111111111
-		</div>
 		<div class="transition">
 
 		</div>

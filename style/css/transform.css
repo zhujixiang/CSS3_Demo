@@ -1,0 +1,39 @@
+.transform {
+	/*旋转*/
+	transform: rotate(30deg);
+	/*移动*/
+	transform: translate(27px, 6px);
+	/*大小缩放*/
+	transform: scale(1, 0.6);
+	/*倾斜*/
+	transform: skew(15deg, 5deg);
+	/*教程上说：旋转，缩放，移动,倾斜*/
+	/*实验是：旋转,翻转,移动*/
+	transform: matrix(0.866, 0.5, -0.5, 0.866, 0, 0);
+	width: 300px;
+	height: 100px;
+	background-color: #3a87ab;
+}
+
+
+/*transform-origin: x-axis y-axis z-axis; 更改转换元素的位置
+transform-style: flat|preserve-3d; 指定嵌套元素是怎样在三维空间中呈现
+perspective: number|none; 改变3D元素是怎样查看透视图
+perspective-origin: x-axis y-axis; 改变 3D 元素的底部位置
+backface-visibility: visible|hidden; 当元素不面向屏幕时是否可见
+
+matrix3d(n,n,n,n,n,n,
+n,n,n,n,n,n,n,n,n,n)	定义 3D 转换，使用 16 个值的 4x4 矩阵。
+translate3d(x,y,z)	定义 3D 转化。
+translateX(x)	定义 3D 转化，仅使用用于 X 轴的值。
+translateY(y)	定义 3D 转化，仅使用用于 Y 轴的值。
+translateZ(z)	定义 3D 转化，仅使用用于 Z 轴的值。
+scale3d(x,y,z)	定义 3D 缩放转换。
+scaleX(x)	定义 3D 缩放转换，通过给定一个 X 轴的值。
+scaleY(y)	定义 3D 缩放转换，通过给定一个 Y 轴的值。
+scaleZ(z)	定义 3D 缩放转换，通过给定一个 Z 轴的值。
+rotate3d(x,y,z,angle)	定义 3D 旋转。
+rotateX(angle)	定义沿 X 轴的 3D 旋转。
+rotateY(angle)	定义沿 Y 轴的 3D 旋转。
+rotateZ(angle)	定义沿 Z 轴的 3D 旋转。
+perspective(n)	定义 3D 转换元素的透视视图。*/
