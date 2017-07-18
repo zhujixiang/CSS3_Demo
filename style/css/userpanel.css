@@ -1,0 +1,30 @@
+.userpanel {
+	/*是否可以调整大小*/
+	resize: both;
+	/*确切的方式定义适应某个区域的具体内容*/
+	box-sizing: border-box;
+	/*元素之外的轮廓,可以理解为又一层border*/
+	outline: 2px solid red;
+	outline-offset: 5px;
+	background-color: #3a87ab;
+	width: 300px;
+	height: 150px;
+	padding: 20px;
+}
+
+
+/*appearance	允许您使一个元素的外观像一个标准的用户界面元素
+box-sizing	允许你以适应区域而用某种方式定义某些元素
+icon	为创作者提供了将元素设置为图标等价物的能力
+nav-down	指定在何处使用箭头向下导航键时进行导航	
+nav-index	指定一个元素的Tab的顺序
+nav-left	指定在何处使用左侧的箭头导航键进行导航	
+nav-right	指定在何处使用右侧的箭头导航键进行导航	
+nav-up	指定在何处使用箭头向上导航键时进行导航	
+outline-offset	外轮廓修饰并绘制超出边框的边缘
+resize	指定一个元素是否是由用户调整大小*/
+
+
+/*重要提示:
+ * 当设置了box-sizing: border-box;后,padding(内边距) 和 border(边框) 也包含在 width 和 height 中,
+所以,我们就可以随意设置padding和border,而不会修改元素的实际大小！！！（需要先固定元素的大小,如果不固定，元素大小还是会变化）*/

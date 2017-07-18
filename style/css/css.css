@@ -28,34 +28,3 @@ span {
 	font-weight: bold;
 	margin: 30px;
 }
-
-
-.transition {
-	width: 100px;
-	height: 100px;
-	background-color: coral;
-	transition: width 0.5s linear 2s;
-}
-
-.transition:hover {
-	width: 500px;
-}
-
-@keyframes animal {
-	from {
-		background-color: #000000;
-	}
-	to {
-		background-color: #FF7F50;
-	}
-}
-
-.animal {
-	width: 100px;
-	height: 100px;
-	background-color: #000000;
-}
-
-.animal:hover {
-	animation: animal 3s;
-}

@@ -1,0 +1,72 @@
+.image {
+	width: 200px;
+}
+
+.image:hover {
+	width: 300px;
+}
+
+.image .max-width {
+	/*让图片自适应大小*/
+	max-width: 100%;
+}
+
+@keyframes imgs {
+	0% {
+		filter: blur(4px);
+	}
+	10% {
+		filter: brightness(250%);
+	}
+	20% {
+		filter: contrast(180%);
+	}
+	30% {
+		filter: grayscale(100%);
+	}
+	40% {
+		filter: hue-rotate(180deg);
+	}
+	50% {
+		filter: invert(100%);
+	}
+	60% {
+		filter: opacity(50%);
+	}
+	70% {
+		filter: saturate(7);
+	}
+	80% {
+		filter: sepia(100%);
+	}
+	90% {
+		filter: drop-shadow(8px 8px 10px green);
+	}
+}
+
+.imgs:hover {
+	/*animation: name duration timing-function delay iteration-count direction fill-mode play-state;下面样式的全量写法*/
+	animation: imgs 5s;
+}
+
+@media only screen and (min-width: 1200px) {
+	.media {
+		width: 300px;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.media {
+		width: 100px;
+	}
+}
+
+/*viewport(视窗) 的宽度与高度
+设备的宽度与高度
+朝向 (智能手机横屏，竖屏) 。
+分辨率*/
+
+/*all	用于所有多媒体类型设备
+print	用于打印机
+screen	用于电脑屏幕，平板，智能手机等。
+speech	用于屏幕阅读器*/

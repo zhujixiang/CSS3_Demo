@@ -3,6 +3,7 @@
 	transition: width 2s ease 1s, height 1s;
 	width: 100px;
 	height: 100px;
+	background-color: #59a541;
 }
 
 .transition:hover {

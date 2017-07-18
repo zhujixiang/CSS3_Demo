@@ -1,0 +1,27 @@
+.column {
+	/*columns: column-width column-count;*/
+	/*column-width
+	column-count*/
+	columns: 60px 3;
+	/*column-rule: column-rule-width column-rule-style column-rule-color;*/
+	/*column-rule-style
+	column-rule-width
+	column-rule-color*/
+	column-rule: 3px outset #00ff72;
+	/*column-span: 1|all;*/
+	column-span: all;
+	column-gap: 40px;
+	column-fill: balance;
+}
+
+
+/*column-count	指定元素应该被分割的列数。
+column-fill	指定如何填充列
+column-gap	指定列与列之间的间隙
+column-rule	所有 column-rule-* 属性的简写
+column-rule-color	指定两列间边框的颜色
+column-rule-style	指定两列间边框的样式
+column-rule-width	指定两列间边框的厚度
+column-span	指定元素要跨越多少列
+column-width	指定列的宽度
+columns	设置 column-width 和 column-count 的简写*/
