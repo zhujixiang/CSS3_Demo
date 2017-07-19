@@ -20,3 +20,37 @@ flex-flow	flex-direction 和 flex-wrap 的简写
 order	设置弹性盒子的子元素排列顺序。
 align-self	在弹性子元素上使用。覆盖容器的 align-items 属性。
 flex	设置弹性盒子的子元素如何分配空间。*/
+
+.flex_container {
+	display: flex;
+	/*flex-direction+flex-wrap*/
+	/*flex-flow: row row-reverse;*/
+	/*项目排列方向*/
+	flex-direction: row;
+	/*换行*/
+	flex-wrap: wrap;
+	/*X轴对齐方式*/
+	justify-content: flex-start;
+	/*Y轴对齐方式*/
+	align-items: center;
+	/*Y轴多轴对齐方式*/
+	align-content: center;
+}
+
+.flex_item {
+	width: 100px;
+	height: 100px;
+	background-color: darkgray;
+	/*排列顺序*/
+	order: 0;
+	/*flex-grow+flex-shrink+flex-basis*/
+	/*flex: 0 1 auto;*/
+	/*如果存在剩余空间,项目放大比例*/
+	flex-grow: 0;
+	/*如果空间不足,项目缩小比例:1*/
+	flex-shrink: 0;
+	/*类似于宽度属性*/
+	flex-basis: auto;
+	/*单独设置对齐方式*/
+	align-self: auto;
+}
